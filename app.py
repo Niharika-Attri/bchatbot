@@ -36,7 +36,7 @@ def getResponse():
         if( input == "not found"):
             return {"response":"please enter input"}
         else:
-            response = get_gemini_response(user_input['input']+"answer the question within 100 words")
+            response = get_gemini_response(input+"answer the question within 100 words")
             return {"response": response}
 
 if __name__ == '__main__':
